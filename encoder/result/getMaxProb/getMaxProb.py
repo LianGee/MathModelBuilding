@@ -36,7 +36,6 @@ def getMaxProb():
     plt.scatter(ax,lst_prob)
     plt.annotate('local max', xy = (ax[-1], lst_prob[-1]), xytext = (3, 1.5), \
         arrowprops = dict(facecolor = 'black', shrink = 0.1))
-
     plt.show()
 
 

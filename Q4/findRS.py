@@ -11,18 +11,6 @@
 
 #-*-coding: utf-8 -*-
 
-#-------------------------------------------------------------------------------
-# Name:        getMaxProb
-# Purpose:
-#
-# Author:      LianGee
-#
-# Created:     20/09/2016
-# Copyright:   (c) LianGee 2016
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
-#-*-coding: utf-8 -*-
-
 import matplotlib.pyplot as plt
 import os
 
@@ -64,11 +52,9 @@ def main():
         filePath = 'results/'
         filePath += files[i]
         #print filePath
-        if i < 5:
-            sorted_prob = getMaxProb(filePath,str(i))
-            lst_prob.append(sorted_prob[-100:])
-        else:
-            lst_prob.append([('rs951805', 0.432292)]*100)
+        sorted_prob = getMaxProb(filePath,str(i))
+        lst_prob.append(sorted_prob[-100:])
+
     lst_rs = []*10
     rs = []
     print len(lst_prob)
